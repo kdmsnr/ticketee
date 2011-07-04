@@ -10,6 +10,7 @@ gem 'sqlite3'
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
+gem 'dynamic_form'
 gem 'uglifier'
 
 gem 'jquery-rails'
