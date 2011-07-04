@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 module NavigationHelpers
   # Maps a name to a path. Used by the
   #
@@ -8,7 +9,7 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /^the home\s?page$/
+    when /^ホーム$/
       '/'
 
     # Add more mappings here.
@@ -16,6 +17,8 @@ module NavigationHelpers
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
+    when /([^\"]*)プロジェクト/i
+      project_path(Project.find_by_name!($1))
 
     else
       begin
