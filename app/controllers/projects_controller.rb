@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_filter :find_project, :only => [:show, :edit, :udpate, :destroy]
+  before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 
   def index
     @projects = Project.all

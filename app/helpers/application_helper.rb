@@ -6,4 +6,10 @@ module ApplicationHelper
       end
     end
   end
+
+  def nl2br(text)
+    text.gsub(/\r\n/, "<br />")
+  rescue
+    text
+  end
 end
