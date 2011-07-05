@@ -14,12 +14,14 @@
 </head>
 <body>
 
+
 <% flash.each do |k, v| %>
 	<div class="flash" id="<%= k %>">
 		<%= v %>
 	</div>
 <% end %>
 
+<h1><%= link_to "Ticketee", root_path %></h1>
 <%= yield %>
 
 </body>
